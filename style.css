@@ -16,9 +16,9 @@ body {
   min-width: 100%;
   min-height: 100%;
   z-index: -1;
-  filter: blur(10px); /* Adjust the blur intensity as needed */
-  -webkit-filter: blur(10px); /* For older versions of Safari/Chrome */
-  backdrop-filter: blur(10px); /* Apply blur to the backdrop */
+  filter: blur(10px); 
+  -webkit-filter: blur(10px); 
+  backdrop-filter: blur(10px); 
 }
 
 div.profile {
@@ -26,7 +26,7 @@ div.profile {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 750px; /* Set the height of the container to 100% of the viewport height */
+  height: 750px; 
   margin: 0;
   opacity: 0;
   transition: opacity 0.5s ease;
@@ -40,7 +40,7 @@ img {
 }
 
 .username {
-  font-family: 'Array-Regular',sans-serif;
+  font-family: 'Array-Bold',sans-serif;
   color: rgb(255, 255, 255);
   text-align: center;
   font-size: 30px;
@@ -50,13 +50,26 @@ img {
   0 0 10px #fff;
 }
 
+.pronouns {
+  font-family: 'Array-Regular', sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 12px; /* Adjust the font size as needed */
+  margin-top: -32px; /* Adjust the margin-top as needed */
+}
+
 .typewriter {
-  margin-top: 155px;
+  margin-top: 180px;
   color: white;
   position: absolute;
   font-family: 'Array-Regular',sans-serif;
   font-size: 20px;
   overflow: hidden;
+  text-align: center;
+}
+
+.typewriter-placeholder {
+  height: 20px; /* Adjust the height to match the typewriter text size */
 }
 
 .mute-button {
@@ -102,11 +115,11 @@ img {
 }
 
 #underline {
-  width: 400px; /* Adjust the width of the line as needed */
+  width: 400px; 
   height: 2px;
-  background-color: #ffffff2f; /* Change the line color as needed */
-  border-radius: 2px; /* Add a border-radius for smoother edges */
-  margin: 40px auto; /* Adjust the margin to position the line */
+  background-color: #ffffff2f; 
+  border-radius: 2px; 
+  margin: 40px auto; 
 }
 
 #socialIcons {
@@ -118,24 +131,36 @@ img {
 
 .social-icon {
   filter: drop-shadow(0px 0px 10px rgb(255, 255, 255));
-  margin: 0 6px; /* Adjust spacing between icons */
+  margin: 0 6px; 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .social-icon svg {
-  width: 33.5px; /* Adjust icon size */
-  height: 33.5px; /* Adjust icon size */
+  width: 33.5px; 
+  height: 33.5px; 
 }
 
 .social-icon:hover {
-  transform: scale(1.2); /* Increase size on hover */
+  transform: scale(1.2); 
   filter: drop-shadow(0px 0px 10px rgb(255, 255, 255));
 }
 
 .mute-button:hover {
-  transform: scale(1.2); /* Increase size on hover */
+  transform: scale(1.2); 
   filter: drop-shadow(0px 0px 10px rgb(255, 255, 255));
 }
+
+#discordprofile {
+  position: absolute;
+  height: 100px;
+  width: 18.5%;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.09);
+  border: 1px solid rgba(255, 255, 255, 0.105);
+  border-radius: 12px;
+  margin-top: 500px;
+}
+
 
 canvas {
   position: fixed;
