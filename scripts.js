@@ -1,4 +1,3 @@
-
 window.onload = function () {
   document.getElementById('overlay').style.display = 'flex';
 };
@@ -141,58 +140,71 @@ function updateMuteButton() {
 // Initial state of mute button
 updateMuteButton();
 
-particlesJS("particles-js", {
-  particles: {
-    number: { value: 8, density: { enable: true, value_area: 2800 } },
-    color: { value: "#fff" },
-    shape: {
-      type: "circle",
-      stroke: { width: 0, color: "#ffffff" },
-      polygon: { nb_sides: 3 },
-      image: { src: "img/github.svg", width: 100, height: 100 }
-    },
-    opacity: {
-      value: 0.1122388442605866,
-      random: true,
-      anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false }
-    },
-    size: {
-      value: 7,
-      random: true,
-      anim: { enable: false, speed: 40, size_min: 0.1, sync: false }
-    },
-    line_linked: {
-      enable: false,
-      distance: 500,
-      color: "#ffffff",
-      opacity: 0.4,
-      width: 2
-    },
-    move: {
-      enable: true,
-      speed: 1.603412060865523,
-      direction: "bottom",
-      random: false,
-      straight: false,
-      out_mode: "out",
-      bounce: false,
-      attract: { enable: false, rotateX: 600, rotateY: 1200 }
-    }
+tsParticles.load("tsparticles", {
+  background: {
+    color: "transparent",
   },
+  detectRetina: true,
+  fpsLimit: 60,
   interactivity: {
-    detect_on: "canvas",
+    detectsOn: "canvas",
     events: {
-      onhover: { enable: true, mode: "bubble" },
-      onclick: { enable: true, mode: "push" },
-      resize: true
+      resize: true,
+      hover: {
+        enable: true,
+        mode: "bubble",
+      },
     },
     modes: {
-      grab: { distance: 400, line_linked: { opacity: 0.5 } },
-      bubble: { distance: 100, size: 4, duration: 0.3, opacity: 1, speed: 3 },
-      repulse: { distance: 200, duration: 0.4 },
-      push: { particles_nb: 2 },
-      remove: { particles_nb: 2 }
-    }
+      bubble: {
+        distance: 200,
+        size: 40,
+        duration: 0.4,
+      },
+    },
   },
-  retina_detect: true
+  particles: {
+    color: {
+      value: "#fff",
+    },
+    number: {
+      density: {
+        enable: true,
+        area: 2800,
+      },
+      limit: 100,
+      value: 400,
+    },
+    opacity: {
+      animation: {
+        enable: true,
+        minimumValue: 0.05,
+        speed: 1.5,
+        sync: false,
+      },
+      random: {
+        enable: true,
+        minimumValue: 0.05,
+      },
+      value: 1,
+    },
+    shape: {
+      type: "circle",
+    },
+    size: {
+      random: {
+        enable: true,
+        minimumValue: 0.5,
+      },
+      value: 2,      
+    },
+  },
+  // Set the particle container size dynamically
+  size: {
+    width: "100%",
+    height: "100%",
+  },
 });
+
+
+
