@@ -1,3 +1,5 @@
+@import url('array.css');
+
 body {
   margin: 0;
   padding: 0;
@@ -38,7 +40,7 @@ img {
 }
 
 .username {
-  font-family: Array,sans-serif;
+  font-family: 'Array-Regular',sans-serif;
   color: rgb(255, 255, 255);
   text-align: center;
   font-size: 30px;
@@ -52,7 +54,7 @@ img {
   margin-top: 155px;
   color: white;
   position: absolute;
-  font-family: Array,sans-serif;
+  font-family: 'Array-Regular',sans-serif;
   font-size: 20px;
   overflow: hidden;
 }
@@ -93,7 +95,7 @@ img {
   color: rgb(255, 255, 255);
   text-align: center;
   font-size: 28px;
-  font-family: Array,sans-serif;
+  font-family: 'Array-Regular',sans-serif;
   text-shadow: 
   0 0 7px #fff,
   0 0 10px #fff;
