@@ -1,3 +1,8 @@
+
+
+
+
+
 window.onload = function () {
   document.getElementById('overlay').style.display = 'flex';
 };
@@ -33,6 +38,7 @@ aniTitle = setInterval(function () {
 
 
 animateTitle(Title = "@krulowy", delay = 350)
+
 
 // Function to remove overlay and initiate text typing animation
 function removeOverlay() {
