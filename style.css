@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  user-select: none;
+  transition: opacity 0.5s ease;
+}
+
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  filter: blur(10px); /* Adjust the blur intensity as needed */
+  -webkit-filter: blur(10px); /* For older versions of Safari/Chrome */
+  backdrop-filter: blur(10px); /* Apply blur to the backdrop */
+}
+
+div.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 750px; /* Set the height of the container to 100% of the viewport height */
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+img {
+  max-width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 50%;
+  filter: drop-shadow(4px 4px 10px black);
+}
+
+.username {
+  font-family: Array,sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+  text-shadow: 
+  0 0 7px #fff,
+  0 0 10px #fff;
+}
+
+.typewriter {
+  margin-top: 155px;
+  color: white;
+  position: absolute;
+  font-family: Array,sans-serif;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+.mute-button {
+  font-size: 24px;
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 1); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  display: none;
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+
+
+#overlayText {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 28px;
+  font-family: Array,sans-serif;
+  text-shadow: 
+  0 0 7px #fff,
+  0 0 10px #fff;
+}
+
+#underline {
+  width: 400px; /* Adjust the width of the line as needed */
+  height: 2px;
+  background-color: #ffffff2f; /* Change the line color as needed */
+  border-radius: 2px; /* Add a border-radius for smoother edges */
+  margin: 40px auto; /* Adjust the margin to position the line */
+}
+
+#socialIcons {
+  margin: -25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon {
+  filter: drop-shadow(0px 0px 10px rgb(255, 255, 255));
+  margin: 0 6px; /* Adjust spacing between icons */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icon svg {
+  width: 33.5px; /* Adjust icon size */
+  height: 33.5px; /* Adjust icon size */
+}
+
+.social-icon:hover {
+  transform: scale(1.2); /* Increase size on hover */
+  filter: drop-shadow(0px 0px 10px rgb(255, 255, 255));
+}
+
+.mute-button:hover {
+  transform: scale(1.2); /* Increase size on hover */
+  filter: drop-shadow(0px 0px 10px rgb(255, 255, 255));
+}
