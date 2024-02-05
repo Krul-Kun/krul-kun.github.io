@@ -205,4 +205,3 @@ tsParticles.load("tsparticles", {
     height: "100%",
   },
 });
-
