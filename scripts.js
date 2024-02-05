@@ -206,5 +206,3 @@ tsParticles.load("tsparticles", {
   },
 });
 
-
-
